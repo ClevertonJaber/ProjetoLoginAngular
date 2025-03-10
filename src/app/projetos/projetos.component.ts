@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from "../shared/sidebar/sidebar.component";
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-projetos',
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule, SidebarComponent],
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  templateUrl: './projetos.component.html',
+  styleUrl: './projetos.component.css'
 })
-export class DashboardComponent {
+export class ProjetosComponent {
+
 }

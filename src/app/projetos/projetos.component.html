@@ -1,0 +1,184 @@
+<!-- app.component.html -->
+<div class="app-container">
+    <!-- Barra lateral de navegação -->
+  <app-sidebar></app-sidebar>
+
+  <div class="main-content">
+    <header class="top-bar">
+      <div class="page-title">
+        <h1>Cadastro de Projeto</h1>
+      </div>  
+      <div class="user-info">
+        <span class="material-icons">notifications</span>
+        <span class="username">Admin</span>
+        <span class="material-icons">account_circle</span>
+      </div>
+    </header>
+
+    <div class="content-container">
+      <form class="project-form">
+        <div class="form-section">
+          <h2>Informações do Projeto</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nomeProjeto">Nome do Projeto</label>
+              <input type="text" id="nomeProjeto" placeholder="Digite o nome do projeto">
+            </div>
+            <div class="form-group">
+              <label for="codigoProjeto">Código do Projeto</label>
+              <input type="text" id="codigoProjeto" placeholder="Digite o código do projeto">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="clienteProjeto">Cliente</label>
+              <select id="clienteProjeto">
+                <option value="">Selecione o cliente</option>
+                <option value="1">Cliente A</option>
+                <option value="2">Cliente B</option>
+                <option value="3">Cliente C</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tipoProjeto">Tipo de Projeto</label>
+              <select id="tipoProjeto">
+                <option value="">Selecione o tipo</option>
+                <option value="residencial">Residencial</option>
+                <option value="comercial">Comercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="infraestrutura">Infraestrutura</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Localização</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" placeholder="Digite o endereço completo">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" placeholder="Digite a cidade">
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <select id="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" placeholder="00000-000">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Cronograma</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dataInicio">Data de Início</label>
+              <input type="date" id="dataInicio">
+            </div>
+            <div class="form-group">
+              <label for="dataPrevisaoTermino">Previsão de Término</label>
+              <input type="date" id="dataPrevisaoTermino">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Orçamento</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="valorOrcamento">Valor Total (R$)</label>
+              <input type="number" id="valorOrcamento" placeholder="0,00">
+            </div>
+            <div class="form-group">
+              <label for="formaPagamento">Forma de Pagamento</label>
+              <select id="formaPagamento">
+                <option value="">Selecione a forma</option>
+                <option value="avista">À Vista</option>
+                <option value="parcelado">Parcelado</option>
+                <option value="financiamento">Financiamento</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Responsáveis</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="engenheiro">Engenheiro Responsável</label>
+              <select id="engenheiro">
+                <option value="">Selecione o engenheiro</option>
+                <option value="1">Carlos Silva</option>
+                <option value="2">Maria Oliveira</option>
+                <option value="3">João Santos</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="arquiteto">Arquiteto</label>
+              <select id="arquiteto">
+                <option value="">Selecione o arquiteto</option>
+                <option value="1">Ana Costa</option>
+                <option value="2">Pedro Mendes</option>
+                <option value="3">Juliana Lima</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Observações</h2>
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="observacoes">Observações Adicionais</label>
+              <textarea id="observacoes" rows="4" placeholder="Digite informações adicionais relevantes para o projeto"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Projeto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

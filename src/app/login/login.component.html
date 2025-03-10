@@ -1,7 +1,10 @@
 <div class="login-container">
+  <div class="login-layout">
+    <div class="logo-section">
+      <img src="assets\logo_color2.PNG" alt="Globoo" class="login-logo">
+    </div>
     <div class="login-card">
       <div class="login-header">
-        <img src="assets\logo_color2.PNG" alt="Globoo" class="login-logo">
         <h2>Login</h2>
         <p>Bem-vindo(a) de volta!</p>
       </div>
@@ -9,9 +12,9 @@
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="email">Email</label>
-          <input 
-            type="email" 
-            id="email" 
+          <input
+            type="email"
+            id="email"
             formControlName="email"
             placeholder="seu@email.com"
             [ngClass]="{'invalid': email?.invalid && (email?.dirty || email?.touched)}"
@@ -24,9 +27,9 @@
         
         <div class="form-group">
           <label for="password">Senha</label>
-          <input 
-            type="password" 
-            id="password" 
+          <input
+            type="password"
+            id="password"
             formControlName="password"
             placeholder="Sua senha"
             [ngClass]="{'invalid': password?.invalid && (password?.dirty || password?.touched)}"
@@ -54,3 +57,4 @@
       </div>
     </div>
   </div>
+</div>
